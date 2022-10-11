@@ -11,6 +11,7 @@ const homeRoute = require('./Router/homeRoute')
 app.use(homeRoute)
 
 app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'charts')))
 
 const port = 3000
 app.listen(port, err => {

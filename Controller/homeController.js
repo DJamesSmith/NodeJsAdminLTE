@@ -16,8 +16,8 @@ exports.flot = ((req, res) => {
     })
 })
 
-exports.inlineCharts = ((req, res) => {
-    res.render('inlineCharts', {
+exports.inline = ((req, res) => {
+    res.render('inline', {
         title: 'AdminLTE 3 | Inline Charts'
     })
 })

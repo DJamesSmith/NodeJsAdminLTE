@@ -5,6 +5,6 @@ const homeController = require('../Controller/homeController')
 Router.get('/', homeController.index)
 Router.get('/chartjs', homeController.chartjs)
 Router.get('/flot', homeController.flot)
-Router.get('/inlineCharts', homeController.inlineCharts)
+Router.get('/inline', homeController.inline)
 
 module.exports = Router
