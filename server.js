@@ -5,13 +5,12 @@ const path = require('path')
 const app = express()
 
 app.set('view engine', 'ejs')
-app.set('views', 'views')
+app.set('views', 'views/admin')
 
-const homeRoute = require('./Router/homeRoute')
+const homeRoute = require('./Router/admin/homeRoute')
 app.use(homeRoute)
 
-app.use(express.static(path.join(__dirname, 'public')))
-app.use(express.static(path.join(__dirname, 'charts')))
+app.use(express.static(path.join(__dirname, 'public/admin')))
 
 const port = 3000
 app.listen(port, err => {
